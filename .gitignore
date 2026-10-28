@@ -1,0 +1,10 @@
+.DS_Store
+Thumbs.db
+.env
+.env.*
+.codex/
+auth.json
+*-preview.png
+*-audit.png
+*-review.png
+*-final.png

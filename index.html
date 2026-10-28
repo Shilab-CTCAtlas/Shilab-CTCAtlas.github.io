@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Shi Lab CTC Atlas — an open research portal for circulating tumor cell data, methods, and discovery.">
+  <meta name="theme-color" content="#071b21">
+  <title>CTC Atlas — Shi Lab</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="CTC Atlas home">
+      <svg viewBox="0 0 42 42" aria-hidden="true"><circle cx="21" cy="21" r="18"/><circle cx="21" cy="21" r="7"/><path d="M21 3v11M39 21H28M21 39V28M3 21h11"/></svg>
+      <span>CTC <i>Atlas</i></span>
+    </a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav"><span></span><span></span></button>
+    <nav id="site-nav" aria-label="Main navigation">
+      <a href="#portal">Portal</a><a href="biology.html">Samples</a><a href="data.html">Data</a><a href="gallery.html">Images</a><a href="publications.html">Papers</a><a href="lab.html">The Lab</a>
+      <a class="nav-cta" href="https://github.com/Shilab-CTCAtlas" target="_blank" rel="noreferrer">GitHub <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> Shi Lab · Open Research Initiative</p>
+        <h1>Charting cancer,<br><em>one cell at a time.</em></h1>
+        <p class="lede">An open portal for single-cell sequencing data and sequencing-validated cancer-cell images from blood, bronchoalveolar lavage fluid, urine, pleural effusion, and ascites.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#portal">Enter the portal <span>↓</span></a>
+          <a class="button text-button" href="https://github.com/Shilab-CTCAtlas" target="_blank" rel="noreferrer">View open-source work <span>↗</span></a>
+        </div>
+      </div>
+      <div class="cell-field" aria-label="Abstract visualization of circulating tumor cells">
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+        <div class="cell cell-main"><span></span><i></i></div>
+        <div class="cell cell-one"><span></span></div><div class="cell cell-two"><span></span></div>
+        <div class="cell cell-three"><span></span></div>
+        <p class="specimen-label label-a">CTC · 001</p><p class="specimen-label label-b">Rare cell population</p>
+      </div>
+      <div class="hero-index">01 <span>/</span> 04</div>
+    </section>
+
+    <section class="statement reveal" id="portal">
+      <p class="section-tag">Research portal</p>
+      <div>
+        <h2>Explore cancer cells<br><em>across body fluids.</em></h2>
+        <p>The portal organizes cells by specimen source, cancer context, and sequencing dataset, then links molecularly identified cancer cells to their corresponding microscopy images.</p>
+        <div class="portal-research-summary"><p>Research focus</p><a href="lab.html#research"><span>01</span><strong>Liquid biopsy for non-invasive cancer diagnosis, tissue-of-origin identification, and treatment-response prediction</strong></a><a href="lab.html#research"><span>02</span><strong>Precision diagnostic systems for major diseases</strong></a></div>
+      </div>
+    </section>
+
+    <section class="portal-grid" aria-label="Portal collections">
+      <a class="portal-card reveal" href="biology.html"><span class="number">01 · SPECIMENS</span><div class="icon-network" aria-hidden="true"><i></i><i></i><i></i><i></i></div><div><span class="status">Sample atlas</span><h3>Body Fluids</h3><p>Browse blood, bronchoalveolar lavage fluid, urine, pleural effusion, and ascites collections.</p><b>Explore sample types <span>→</span></b></div></a>
+      <a class="portal-card reveal" href="data.html"><span class="number">02 · SEQUENCING</span><div class="icon-grid" aria-hidden="true"></div><div><span class="status">In preparation</span><h3>Single-cell Sequencing</h3><p>Explore cell-level molecular profiles, cancer-cell labels, sample metadata, and analysis results.</p><b>Open data catalog <span>→</span></b></div></a>
+      <a class="portal-card reveal" href="gallery.html"><span class="number">03 · VALIDATED CELLS</span><div class="icon-seq" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div><div><span class="status">In preparation</span><h3>Verified Cell Images</h3><p>Browse images of cancer cells identified by sequencing, linked to cell IDs, evidence, and specimen metadata.</p><b>View verified cells <span>→</span></b></div></a>
+      <a class="portal-card portal-code reveal" href="publications.html"><span class="number">04 · EVIDENCE</span><div class="code-lines" aria-hidden="true"><i></i><i></i><i></i><i></i></div><div><span class="status">Research outputs</span><h3>Papers & Resources</h3><p>Find publications, datasets, analysis code, protocols, citations, and reproducible workflows.</p><b>Browse research outputs <span>→</span></b></div></a>
+    </section>
+
+    <section class="quote" id="about">
+      <div class="quote-visual reveal"><div class="scan-line"></div><div class="micro-cell m1"></div><div class="micro-cell m2"></div><div class="micro-cell m3"></div></div>
+      <div class="quote-copy reveal"><p class="section-tag">Sequence to image</p><blockquote>“A cancer-cell image becomes more meaningful when its identity is supported by molecular evidence.”</blockquote><p>The atlas links single-cell sequencing results to the corresponding cell image, allowing visitors to examine both the molecular classification and observed morphology.</p></div>
+    </section>
+
+    <section class="lab-intro reveal">
+      <div><p class="section-tag">Shi Lab</p><h2>Research is built<br><em>by people.</em></h2></div>
+      <div class="lab-intro-copy"><p>Shi Lab focuses on liquid biopsy for non-invasive cancer diagnosis, tumor-origin identification, and treatment guidance, alongside precision diagnostic systems for major diseases.</p><div class="home-research-focus"><p>Research focus</p><a href="lab.html#research"><span>01</span>Liquid biopsy for cancer diagnosis and treatment guidance</a><a href="lab.html#research"><span>02</span>Precision diagnostic systems for major diseases</a></div><div class="lab-links"><a href="lab.html#research">Research directions <span>→</span></a><a href="lab.html#team">People <span>→</span></a><a href="lab.html#news">News <span>→</span></a><a href="lab.html#contact">Contact & collaboration <span>→</span></a></div></div>
+    </section>
+
+    <section class="open-science reveal">
+      <p class="section-tag">Built in the open</p><h2>Science moves further<br><em>when knowledge travels.</em></h2><p>We are building this resource as an open, collaborative foundation for the research community.</p><a class="button light" href="https://github.com/Shilab-CTCAtlas" target="_blank" rel="noreferrer">Join us on GitHub <span>↗</span></a>
+    </section>
+  </main>
+
+  <footer><a class="brand footer-brand" href="#top"><svg viewBox="0 0 42 42" aria-hidden="true"><circle cx="21" cy="21" r="18"/><circle cx="21" cy="21" r="7"/><path d="M21 3v11M39 21H28M21 39V28M3 21h11"/></svg><span>CTC <i>Atlas</i></span></a><p>Shi Lab · CTC Atlas<br><span>Data · Imaging · Publications · People</span></p><div><a href="data.html">Data</a><a href="gallery.html">Gallery</a><a href="publications.html">Papers</a><a href="lab.html">The Lab</a><a href="https://github.com/Shilab-CTCAtlas">GitHub</a></div><small>© <span id="year"></span> Shi Lab</small></footer>
+  <script src="script.js"></script>
+</body>
+</html>
