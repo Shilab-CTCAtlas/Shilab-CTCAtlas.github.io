@@ -1,0 +1,12 @@
+.DS_Store
+Thumbs.db
+.env
+.env.*
+.codex/
+auth.json
+*-preview.png
+*-audit.png
+*-review.png
+*-final.png
+# Local image candidates not used by the website
+local-assets/
