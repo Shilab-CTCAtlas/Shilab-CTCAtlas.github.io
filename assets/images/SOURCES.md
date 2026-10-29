@@ -1,17 +1,26 @@
 # Image sources and replacement guide
 
-The homepage hero and liquid-biopsy research card use actual Shi Lab bronchoalveolar lavage and urine specimens provided by the user. The remaining external reference photographs illustrate the website layout; they are not Shi Lab specimens or sequencing-validated atlas records. Keep their captions and licenses while these reference images are in use.
+The homepage images use actual Shi Lab bronchoalveolar lavage, urine, and blood specimens provided by the user. The remaining external reference photographs illustrate the website layout; they are not Shi Lab specimens or sequencing-validated atlas records. Keep their captions and licenses while these reference images are in use.
 
 ## Replacement map
 
 | Placement | Local file | Suggested replacement |
 | --- | --- | --- |
-| Homepage hero | `balf-papanicolaou-shilab.png` | Actual Shi Lab BALF specimen, Papanicolaou stain; displayed in a landscape 3:2 crop |
+| Homepage hero | `balf-papanicolaou-shilab.png` | Actual Shi Lab BALF specimen, Papanicolaou stain; responsive display crop |
 | Homepage: liquid biopsy | `urine-wright-giemsa-shilab.png` | Actual Shi Lab urine specimen, Wright-Giemsa stain; displayed crop excludes the scale bar |
-| Homepage: tumor biology | `research-tumor-biology.jpg` | Cells / tissue image, landscape, subject near the centre |
+| Homepage: spatial omics | `blood-wright-giemsa-shilab.png` | Actual Shi Lab blood specimen, Wright-Giemsa stain; displayed crop excludes the scale bar |
 | Lab introduction | `lab-cell-reference.jpg` | Laboratory's own cell image or approved lab photograph, landscape 3:2 |
 
-You can replace each file independently while keeping its name. Use genuine browser-supported PNG, JPEG or WebP files with the correct extension, preferably at least 1280 px wide. Also update the corresponding HTML `alt`, caption, credit, license link, and `width`/`height` to match the new image. The research cards crop the image for layout (2.2:1 on desktop; 1.7:1 on small phones), so do not place essential labels or scale bars near an edge. If a scientific record must show the whole field, use an uncropped presentation instead. Refresh the browser with Ctrl+F5 after replacement.
+You can replace each file independently while keeping its name. Use genuine browser-supported PNG, JPEG or WebP files with the correct extension, preferably at least 1280 px wide. Also update the corresponding HTML `alt`, caption, credit, license link, and `width`/`height` to match the new image. The research cards crop the image for layout (1.9:1 on desktop; 1.7:1 on small phones), so do not place essential labels or scale bars near an edge. If a scientific record must show the whole field, use an uncropped presentation instead. Refresh the browser with Ctrl+F5 after replacement.
+
+## Spatial-omics research card: Shi Lab blood specimen
+
+- File: `blood-wright-giemsa-shilab.png`, supplied by the user on 2026-10-29.
+- Specimen: Blood. Stain: Wright-Giemsa, as identified by the user.
+- Source / credit: Shi Lab; supplied for use on this website.
+- Dimensions: 1608 × 1164 pixels. The PNG is an unchanged copy of the supplied image.
+- CSS preserves image proportions within the research-card landscape frame, anchoring at the top and enlarging by 8% to exclude the original bottom-left scale bar. No image pixels are retouched.
+- No cancer-cell identity or sequencing-validation status is inferred from this image.
 
 ## Homepage hero: Shi Lab BALF specimen
 
@@ -20,7 +29,8 @@ You can replace each file independently while keeping its name. Use genuine brow
 - Specimen: Bronchoalveolar lavage fluid (BALF).
 - Stain: Papanicolaou stain, as identified by the user.
 - Source / credit: Shi Lab; supplied for use on this website.
-- Dimensions: 1890 × 1492 pixels. The PNG is an unchanged copy. At the user's request, CSS presents a 3:2 landscape crop, trimming the top and bottom while retaining the central cells; object-position is 50% 55%. The tablet height limit may crop a little further.
+- Web display variants: `balf-papanicolaou-shilab-960.webp`, `balf-papanicolaou-shilab-1400.webp`, and `balf-papanicolaou-shilab-1890.webp`. All use lossless WebP encoding; the 1890 px version decodes to exactly the same RGB pixels as the original PNG. Smaller variants are proportionally downsampled with Lanczos for responsive display, then encoded losslessly. The original PNG remains the fallback.
+- Dimensions: 1890 × 1492 pixels. The PNG is an unchanged copy. Displayed as the homepage hero in a responsive frame with proportions preserved; CSS may crop the edges to fit the layout.
 - No cancer-cell identity or sequencing-validation status is inferred from this image.
 
 ## Previous homepage reference / lab introduction
@@ -53,7 +63,7 @@ You can replace each file independently while keeping its name. Use genuine brow
 - License: CC BY-SA 3.0, https://creativecommons.org/licenses/by-sa/3.0/
 - Wikimedia thumbnail, 1280 × 853, downloaded 2026-09-30. The downloaded photograph is unchanged; CSS crops its display. The displayed crop is also licensed under CC BY-SA 3.0.
 
-## Tumor-biology research card
+## Previous tumor-biology reference
 
 - File: `research-tumor-biology.jpg`
 - Title: Acinar pattern adenocarcinoma of lung -- high mag
@@ -61,3 +71,10 @@ You can replace each file independently while keeping its name. Use genuine brow
 - Source: https://commons.wikimedia.org/wiki/File:Acinar_pattern_adenocarcinoma_of_lung_--_high_mag.jpg
 - License: CC BY-SA 3.0, https://creativecommons.org/licenses/by-sa/3.0/
 - Wikimedia thumbnail, 1280 × 853, downloaded 2026-09-30. The downloaded photograph is unchanged; CSS crops its display. The displayed crop is also licensed under CC BY-SA 3.0.
+
+## Responsive WebP variants for the urine and blood research cards
+
+- Originals `urine-wright-giemsa-shilab.png` and `blood-wright-giemsa-shilab.png` remain unchanged and are retained as PNG fallbacks.
+- Each image has WebP versions at 640 px, 960 px, and its original width (1280 px for urine; 1608 px for blood). Filename suffixes identify the width.
+- All WebP files use lossless encoding. Full-width versions decode to the exact original RGB pixels; smaller versions are proportionally downsampled with Lanczos, then encoded losslessly.
+- The browser selects one variant according to viewport size and pixel density. Below-the-fold cards retain lazy loading and the existing CSS crop that excludes each scale bar.

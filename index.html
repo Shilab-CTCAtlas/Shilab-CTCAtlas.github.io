@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20261029-hero-mission">
+  <link rel="stylesheet" href="styles.css?v=20261029-taller-images">
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to content</a>
@@ -31,7 +31,12 @@
           <p>We are a multidisciplinary team at the intersection of single-cell genomics, artificial intelligence, cytopathology, and clinical oncology. Our mission is to transform cancer diagnostics through non- or minimally invasive liquid biopsy approaches that detect rare tumor cells and trace their origins with unprecedented accuracy.</p>
         </section>
         <figure class="hero-image">
-          <div class="hero-image-frame"><img src="assets/images/balf-papanicolaou-shilab.png" alt="Shi Lab bronchoalveolar lavage specimen with Papanicolaou staining" width="1890" height="1492" fetchpriority="high" decoding="async"></div>
+          <div class="hero-image-frame">
+            <picture>
+              <source type="image/webp" srcset="assets/images/balf-papanicolaou-shilab-960.webp 960w, assets/images/balf-papanicolaou-shilab-1400.webp 1400w, assets/images/balf-papanicolaou-shilab-1890.webp 1890w" sizes="(max-width:560px) calc(100vw - 44px), (max-width:850px) 91vw, 784px">
+              <img src="assets/images/balf-papanicolaou-shilab.png" alt="Shi Lab bronchoalveolar lavage fluid specimen with Papanicolaou staining" width="1890" height="1492" fetchpriority="high" decoding="async">
+            </picture>
+          </div>
           <figcaption><span>Bronchoalveolar lavage fluid (BALF) · Papanicolaou stain</span></figcaption>
         </figure>
       </div>
@@ -40,25 +45,33 @@
         <div class="research-themes">
           <article>
             <figure class="reference-image research-image">
-              <div class="research-image-crop"><img src="assets/images/urine-wright-giemsa-shilab.png" alt="Shi Lab urine specimen with Wright-Giemsa staining" width="1280" height="659" loading="lazy" decoding="async"></div>
+              <div class="research-image-crop"><picture><source type="image/webp" srcset="assets/images/urine-wright-giemsa-shilab-640.webp 640w, assets/images/urine-wright-giemsa-shilab-960.webp 960w, assets/images/urine-wright-giemsa-shilab-1280.webp 1280w" sizes="(max-width:560px) calc(100vw - 44px), (max-width:850px) 46vw, (max-width:1784px) 46vw, 850px"><img src="assets/images/urine-wright-giemsa-shilab.png" alt="Shi Lab urine specimen with Wright-Giemsa staining" width="1280" height="659" loading="lazy" decoding="async"></picture></div>
               <figcaption>Urine · Wright–Giemsa stain</figcaption>
             </figure>
             <h3>Liquid biopsy and single-cell diagnostics</h3>
             <div class="research-focus">
               <h4><a href="research.html#rare-cells">Definitive malignancy diagnosis of liquid biopsy via low-cost single-cell genomic sequencing</a></h4>
-              <p>We apply low-cost single-cell whole genome sequencing (scWGS) to accurately determine the malignancy of rare tumor cells in body fluids, enabling definitive malignancy diagnosis.</p>
+              <p>We apply low-cost single-cell whole genome sequencing (scWGS) to accurately determine the malignancy of rare tumor cells in blood and non-blood body fluids, enabling definitive malignancy diagnosis with ~100% specificity and PPV.</p>
             </div>
             <div class="research-focus">
-              <h4><a href="research.html#cytopathology-ai">Cytology AI for rapid malignancy diagnosis &amp; tumor-origin identification</a></h4>
+              <h4><a href="research.html#cytopathology-ai">Cytology AI for rapid malignancy diagnosis &amp; tumor-origin identification via single-cell genomic annotation</a></h4>
               <p>We have developed a single-cell-resolved cytology AI framework that enables rapid malignancy diagnosis and tumor-origin identification. The framework is trained on an accurate, unbiased tumor cell dataset confirmed by single-cell whole-genome sequencing (scWGS) from liquid biopsy samples.</p>
+            </div>
+            <div class="research-focus">
+              <h4>High-throughput single-cell RNA-seq for CTC detection &amp; tumor-origin identification</h4>
+              <p>DTCFinder is a bench-to-bits, label-free method integrating scRNA-seq and machine learning, enabling unbiased detection, in-depth molecular characterization, and precise tissue-of-origin tracing of CTCs across various types of liquid biopsies.</p>
             </div>
           </article>
           <article>
             <figure class="reference-image research-image">
-              <img src="assets/images/research-tumor-biology.jpg" alt="Reference H&amp;E micrograph showing acinar-pattern lung adenocarcinoma tissue" width="1280" height="853" loading="lazy" decoding="async">
-              <figcaption>Reference histology · Cropped · <a href="https://commons.wikimedia.org/wiki/File:Acinar_pattern_adenocarcinoma_of_lung_--_high_mag.jpg" target="_blank" rel="noreferrer">Librepath</a> · <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noreferrer">CC BY-SA 3.0</a></figcaption>
+              <div class="research-image-crop"><picture><source type="image/webp" srcset="assets/images/blood-wright-giemsa-shilab-640.webp 640w, assets/images/blood-wright-giemsa-shilab-960.webp 960w, assets/images/blood-wright-giemsa-shilab-1608.webp 1608w" sizes="(max-width:560px) calc(100vw - 44px), (max-width:850px) 46vw, (max-width:1784px) 46vw, 850px"><img src="assets/images/blood-wright-giemsa-shilab.png" alt="Shi Lab blood specimen with Wright-Giemsa staining" width="1608" height="1164" loading="lazy" decoding="async"></picture></div>
+              <figcaption>Blood · Wright–Giemsa stain</figcaption>
             </figure>
             <h3>Spatial omics and precision diagnosis</h3>
+            <div class="research-focus">
+              <h4>Combined small-cell lung cancer (cSCLC)</h4>
+              <p>Spatial multi-omics unveils the monoclonal origin, neuroendocrine plasticity, and microenvironment of cSCLC. We have developed cSCLC Detector, a sensitive mutation-based assay improving cSCLC detection in tissue and liquid biopsies.</p>
+            </div>
           </article>
         </div>
       </section>
@@ -80,12 +93,21 @@
           </article>
         </div>
         <div class="sequencing-overview">
-          <h2><a href="data.html">Single-cell whole genome sequencing data</a></h2>
-          <ul>
-            <li>CTCs (blood)</li>
-            <li>DTCs (pleural effusion, ascites)</li>
-            <li>ETCs (urine, bile, BALF)</li>
-          </ul>
+          <h2><a href="data.html">Single-cell sequencing data</a></h2>
+          <section class="sequencing-method" aria-labelledby="scwgs-title">
+            <h3 id="scwgs-title">Single-cell whole genome sequencing</h3>
+            <ul>
+              <li>CTCs (blood)</li>
+              <li>DTCs (pleural effusion, ascites)</li>
+              <li>ETCs (urine, bile, BALF)</li>
+            </ul>
+          </section>
+          <section class="sequencing-method" aria-labelledby="scrna-title">
+            <h3 id="scrna-title">High-throughput single-cell RNA-seq</h3>
+            <ul>
+              <li>CTCs (blood, tissue)</li>
+            </ul>
+          </section>
         </div>
       </div>
     </section>
@@ -94,7 +116,7 @@
       <a href="lab.html"><div><h2>About Shi Lab</h2><p>Research background and laboratory information</p></div><span aria-hidden="true">→</span></a>
     </section>
   </main>
-  <footer class="site-footer"><div><a class="brand footer-brand" href="index.html"><span class="brand-name">Shi Lab</span><span class="brand-caption">Single-cell biology & liquid biopsy</span></a><p>CTC Atlas · A research resource from Shi Lab</p></div><div class="footer-links"><a href="research.html">Research</a><a href="atlas.html">CTC Atlas</a><a href="data.html">Sequencing data</a><a href="gallery.html">Cell images</a><a href="publications.html">Publication</a><a href="lab.html">The lab</a><a href="https://github.com/Shilab-CTCAtlas" target="_blank" rel="noreferrer">GitHub ↗</a></div><small>© <span id="year"></span> Shi Lab</small></footer>
+  <footer class="site-footer"><div><a class="brand footer-brand" href="index.html"><span class="brand-name">Shi Lab</span><span class="brand-caption">Single-cell biology & liquid biopsy</span></a><p>CTC Atlas · A research resource from Shi Lab</p></div><div class="footer-links"><a href="research.html">Research</a><a href="atlas.html">CTC Atlas</a><a href="data.html">Sequencing data</a><a href="gallery.html">Cell images</a><a href="publications.html">Publication</a><a href="lab.html">The lab</a><a href="https://github.com/Shilab-CTCAtlas" target="_blank" rel="noreferrer">GitHub ↗</a></div><small>© <span id="year"></span> Shi Lab @ Fudan Univ.</small></footer>
   <script src="script.js?v=20261028-home-columns"></script>
 </body>
 </html>

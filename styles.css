@@ -71,8 +71,8 @@ main{min-width:0}
 .reference-image figcaption a{text-decoration:none}
 .reference-image figcaption a:hover{text-decoration:underline}
 .research-image{margin-bottom:22px}
-.research-image img{aspect-ratio:2.2/1}
-.research-image-crop{overflow:hidden;aspect-ratio:2.2/1;border-radius:4px}
+.research-image img{aspect-ratio:1.9/1}
+.research-image-crop{overflow:hidden;aspect-ratio:1.9/1;border-radius:4px}
 .research-image .research-image-crop img{width:100%;height:100%;aspect-ratio:auto;object-position:center top;transform:scale(1.08);transform-origin:center top}
 .research-themes h3{font-size:21px;line-height:1.4;letter-spacing:-.025em;margin:0 0 12px}
 .research-themes p{max-width:70ch;color:var(--muted);font-size:16px;line-height:1.8;margin:0}
@@ -90,6 +90,9 @@ main{min-width:0}
 .atlas-category p,.sequencing-overview li{font-size:16px;line-height:1.8;color:var(--muted);margin:0}
 .sequencing-overview ul{list-style:none;padding:0;margin:0}
 .sequencing-overview li+li{margin-top:4px}
+.sequencing-method+.sequencing-method{margin-top:26px}
+.sequencing-method h3{font-size:18px;font-weight:500;line-height:1.5;color:var(--ink);margin:0 0 10px}
+.sequencing-method ul{padding-left:24px}
 .resources-intro>.text-link{margin-top:16px}
 .resources-intro h2{font-size:29px;letter-spacing:-.035em;margin:0}
 .resources-intro>p:not(.section-tag){max-width:53ch;font-size:16px;color:var(--muted);margin:12px 0 0}
