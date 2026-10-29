@@ -20,7 +20,7 @@ You can replace each file independently while keeping its name. Use genuine brow
 - Source / credit: Shi Lab; supplied for use on this website.
 - Dimensions: 1779 × 1335 pixels. The PNG is an unchanged copy of the supplied image.
 - Displayed in the same 1.9:1 desktop / 1.7:1 mobile frame as the preceding blood image. CSS uses proportional cover cropping at 50% 60%, without the preceding image's scale-bar zoom.
-- Responsive lossless WebP variants have widths 640, 960, and 1779 px. The full-size version decodes to exactly the original RGB pixels; smaller versions are proportionally downsampled with Lanczos before lossless encoding. The original PNG remains the fallback.
+- The website uses high-quality lossy WebP display variants at widths 640, 960, 1280, and 1779 px, with `-display-` in their filenames (WebP quality 96, method 6). This substantially reduces transfer size compared with the previous lossless WebP versions. Smaller sizes are proportionally downsampled with Lanczos. Display versions are not pixel-identical to the original and are intended for the website preview; the original PNG remains unchanged and serves as the fallback. Previously generated lossless variants are retained but are no longer requested by the page.
 - No cancer-cell identity or sequencing-validation status is inferred from this image.
 
 ## Previous research-card image: Shi Lab blood specimen
