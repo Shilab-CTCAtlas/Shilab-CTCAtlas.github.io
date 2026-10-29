@@ -1,6 +1,6 @@
 # Image sources and replacement guide
 
-The homepage images use actual Shi Lab bronchoalveolar lavage, urine, and blood specimens provided by the user. The remaining external reference photographs illustrate the website layout; they are not Shi Lab specimens or sequencing-validated atlas records. Keep their captions and licenses while these reference images are in use.
+The homepage images use actual Shi Lab bronchoalveolar lavage, urine, and pleural effusion specimens provided by the user. The remaining external reference photographs illustrate the website layout; they are not Shi Lab specimens or sequencing-validated atlas records. Keep their captions and licenses while these reference images are in use.
 
 ## Replacement map
 
@@ -8,12 +8,22 @@ The homepage images use actual Shi Lab bronchoalveolar lavage, urine, and blood 
 | --- | --- | --- |
 | Homepage hero | `balf-papanicolaou-shilab.png` | Actual Shi Lab BALF specimen, Papanicolaou stain; responsive display crop |
 | Homepage: liquid biopsy | `urine-wright-giemsa-shilab.png` | Actual Shi Lab urine specimen, Wright-Giemsa stain; displayed crop excludes the scale bar |
-| Homepage: spatial omics | `blood-wright-giemsa-shilab.png` | Actual Shi Lab blood specimen, Wright-Giemsa stain; displayed crop excludes the scale bar |
+| Homepage: spatial omics | `pleural-effusion-wright-giemsa-shilab.png` | Actual Shi Lab pleural effusion specimen, Wright-Giemsa stain; responsive landscape crop |
 | Lab introduction | `lab-cell-reference.jpg` | Laboratory's own cell image or approved lab photograph, landscape 3:2 |
 
 You can replace each file independently while keeping its name. Use genuine browser-supported PNG, JPEG or WebP files with the correct extension, preferably at least 1280 px wide. Also update the corresponding HTML `alt`, caption, credit, license link, and `width`/`height` to match the new image. The research cards crop the image for layout (1.9:1 on desktop; 1.7:1 on small phones), so do not place essential labels or scale bars near an edge. If a scientific record must show the whole field, use an uncropped presentation instead. Refresh the browser with Ctrl+F5 after replacement.
 
-## Spatial-omics research card: Shi Lab blood specimen
+## Spatial-omics research card: Shi Lab pleural effusion specimen
+
+- File: `pleural-effusion-wright-giemsa-shilab.png`, supplied by the user on 2026-10-29.
+- Specimen: Pleural effusion from combined small-cell lung cancer (cSCLC), as identified by the user. Stain: Wright-Giemsa, as identified by the user.
+- Source / credit: Shi Lab; supplied for use on this website.
+- Dimensions: 1779 × 1335 pixels. The PNG is an unchanged copy of the supplied image.
+- Displayed in the same 1.9:1 desktop / 1.7:1 mobile frame as the preceding blood image. CSS uses proportional cover cropping at 50% 60%, without the preceding image's scale-bar zoom.
+- Responsive lossless WebP variants have widths 640, 960, and 1779 px. The full-size version decodes to exactly the original RGB pixels; smaller versions are proportionally downsampled with Lanczos before lossless encoding. The original PNG remains the fallback.
+- No cancer-cell identity or sequencing-validation status is inferred from this image.
+
+## Previous research-card image: Shi Lab blood specimen
 
 - File: `blood-wright-giemsa-shilab.png`, supplied by the user on 2026-10-29.
 - Specimen: Blood. Stain: Wright-Giemsa, as identified by the user.

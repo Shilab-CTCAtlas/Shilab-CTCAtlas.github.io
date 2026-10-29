@@ -74,6 +74,7 @@ main{min-width:0}
 .research-image img{aspect-ratio:1.9/1}
 .research-image-crop{overflow:hidden;aspect-ratio:1.9/1;border-radius:4px}
 .research-image .research-image-crop img{width:100%;height:100%;aspect-ratio:auto;object-position:center top;transform:scale(1.08);transform-origin:center top}
+.research-image .research-image-crop--pleural img{object-position:center 60%;transform:none}
 .research-themes h3{font-size:21px;line-height:1.4;letter-spacing:-.025em;margin:0 0 12px}
 .research-themes p{max-width:70ch;color:var(--muted);font-size:16px;line-height:1.8;margin:0}
 .research-focus{margin-top:20px;padding-top:17px;border-top:1px solid var(--line)}
